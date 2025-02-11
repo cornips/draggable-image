@@ -1,0 +1,52 @@
+html,body {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  min-height: 100vmin;
+
+  &.grabbing {
+    &,
+    * {
+      cursor: grabbing !important;
+    }
+  }
+}
+
+.image-container {
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0 0 10px #000;
+  position: relative;
+  overflow: hidden;
+  width: 50vw;
+  height: 30vh;
+
+  &, * {
+    user-select: none;
+  }
+
+  #drag-handle {
+    cursor: grab;
+    width: 100%;
+    height: auto;
+  }
+
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
