@@ -1,13 +1,9 @@
 {
-  "name": " ",
+  "name": "draggable-image",
   "version": "0.0.1",
-  "description": "",
+  "description": "Vanilla JS draggable image",
   "private": true,
-  "keywords": [
-    ""
-  ],
-  "license": "",
-  "author": "",
+  "author": "Martijn Cornips",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",

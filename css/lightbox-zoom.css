@@ -14,13 +14,6 @@ body {
   align-items: center;
   background-color: aliceblue;
   min-height: 100vmin;
-
-  &.grabbing {
-    &,
-    * {
-      cursor: grabbing !important;
-    }
-  }
 }
 
 .image-container {
