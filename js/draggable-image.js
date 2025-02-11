@@ -4,7 +4,7 @@ Element.prototype.draggableImage = function() {
   /* Element initialization */
   const init = () => {
     const style = document.createElement('style');
-    style.textContent = `body.grabbing,body.grabbing *{cursor:grabbing !important}`;
+    style.textContent = `body{touch-action:none}body.grabbing,body.grabbing *{cursor:grabbing !important}`;
     document.head.append(style);
   }
 
